@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const tzn = ["GMT","EST","CST","MST","PST"];
 const change = [0,-5,-6,-7,-8];
-const patt = new RegExp(/\d\d:\d\d UTC/i);
+const patt = new RegExp(/[0-2][0-3]:[0-5][0-9] UTC/i);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
