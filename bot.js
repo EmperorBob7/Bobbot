@@ -36,7 +36,7 @@ client.on('message', msg => {
 				m += (hour + change[i]+"").padStart(2,"0") + ":" + minute + "AM\t" + tzn[i] + "\n";
 			}
 		}
-		m += "```";
+		m += "```bob";
 		msg.channel.send(m);
 	}
 });
