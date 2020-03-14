@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const tzn = ["GMT","EST","CST","MST","PST"];
 const change = [0,-5,-6,-7,-8];
-const patt = new RegExp(/[0-2][0-3]:[0-5][0-9] UTC/i);
+const patt = new RegExp(/([0-2][0-3]|[0-1][0-9]):[0-5][0-9] UTC/i);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -36,7 +36,7 @@ client.on('message', msg => {
 				m += (hour + change[i]+"").padStart(2,"0") + ":" + minute + "AM\t" + tzn[i] + "\n";
 			}
 		}
-		m += "```bob";
+		m += "```";
 		msg.channel.send(m);
 	}
 });
