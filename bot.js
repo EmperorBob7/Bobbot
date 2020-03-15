@@ -46,4 +46,4 @@ function timeConvert(msg) {
 	m += "```bob";
 	msg.channel.send(m);
 }
-client.login('NjU4NzY2MjkwNDU0MDUyODg2.XgG_ww.sR80mtebshleme7WbtU4SJcqJIg');
+client.login('NjU4NzY2MjkwNDU0MDUyODg2.Xm1ypQ.woDypCtmizb8qa_0EHs7252GzjQ');
