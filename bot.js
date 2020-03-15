@@ -42,7 +42,7 @@ function timeConvert(msg) {
 			m += (hour + change[i] + "").padStart(2, "0") + ":" + minute + "AM\t" + tzn[i] + "\n";
 		}
 	}
-	m += "```";
+	m += "```bob";
 	msg.channel.send(m);
 }
 client.login('NjU4NzY2MjkwNDU0MDUyODg2.XgG_ww.sR80mtebshleme7WbtU4SJcqJIg');
