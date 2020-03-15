@@ -11,10 +11,6 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 	let txt = msg.content;
-	let UTC = txt.match(patt) + "";
-	let hour = "";
-	let minute = "";
-	let m = "```";
 	if (patt.test(txt) && !msg.author.bot) {
 		timeConvert(msg);
 	}
@@ -23,6 +19,11 @@ client.on('message', msg => {
 	}
 });
 function timeConvert(msg) {
+	let txt = msg.content;
+	let UTC = txt.match(patt) + "";
+	let hour = "";
+	let minute = "";
+	let m = "```";
 	hour = parseInt(UTC.substring(0, 2));
 	minute = UTC.substring(3, 5);
 	for (let i = 0; i < tzn.length; i++) {
