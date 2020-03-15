@@ -19,7 +19,7 @@ client.on('message', msg => {
 		timeConvert(msg);
 	}
 	if(txt == "w!ping") {
-		msg.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+		msg.channel.send(new Date().getTime() - msg.createdTimestamp + " ms");
 	}
 });
 function timeConvert(msg) {
