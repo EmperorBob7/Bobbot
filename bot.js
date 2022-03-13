@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -46,4 +47,4 @@ function timeConvert(msg) {
 	m += "```";
 	msg.channel.send(m);
 }
-client.login('TOKEN');
+client.login(process.env.TOKEN);
